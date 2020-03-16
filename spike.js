@@ -212,7 +212,8 @@ function Link(n1, n2) {
     this.axon.link = this;
     this.axon.node.link = this;
 
-    this.axon.attr({'stroke-width': 5});
+    this.axon.attr({'stroke-width': 5, });
+	//this.axon.attr({'arrow-start': 'open-narrow-short'});
     this.axon.attr({path: "M0 0"});
 
     this.axon.click(function() {this.link.select(); });
